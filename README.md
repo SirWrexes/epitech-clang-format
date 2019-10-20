@@ -21,7 +21,7 @@
 3. #### CLang and its tools are awesome !
 
     * You should really take time to check them out, it's worth your while.
-    * `clang-format` refrmats your code directly, and either prints it to stdout for a preview or directly in place, you chose.
+    * `clang-format` reformats your code directly, and either prints it for to stdout or directly in place, you chose.
     * CLang is an amazing compiler :
         * Faster than GCC
         * Much more eligible error/warning messages
@@ -59,3 +59,7 @@ $ clang-format -help
 * __Vim, Emacs, Clion, VSCode, BBEdit:__ go [here](https://clang.llvm.org/docs/ClangFormat.html)
 * __Sublime Text:__ Check [this](https://packagecontrol.io/packages/Clang%20Format) out. _(You're welcome, Raphael)_
 * __Nano:__ Bruh.
+***
+
+## What rules are implemented ?
+Open the .clang-foormat and read. I made it so it's clear what it does. Happy coding ! 😉
