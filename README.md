@@ -57,27 +57,4 @@ $ clang-format -help
 ## Integration with your editor:
 * __Vim, Emacs, Clion, VSCode, BBEdit:__ go [here](https://clang.llvm.org/docs/ClangFormat.html)
 * __Sublime Text:__ Check [this](https://packagecontrol.io/packages/Clang%20Format) out. _(You're welcome, Raphael)_
-* __Notepad++:__ Bruh.
-***
-
-## List of rules implemented
-* __L - Layout inside a function scope__
-    * L2 - Indentation
-#### CLang can't handle these :
-And some of them a Norminette can't handle either.
-_You should know the style requiremments anyway._
-* __O - File organization__
-    * O1 - Contents of the delivery folder
-    * O2 - File extension
-    * O3 - File coherence
-    * O4 - Naming files and folders
-* __G - Global scope__
-    * G1 - File header
-* __F - Functions__
-    * F1 - Coherence of functions
-    * F2 -  Naming functions
-* __V - Variables and types__
-    * V1 - Naming identifiers
-    * V2 - Structures
-* __I'll finish this later.__
-    * and start actually writing the config file.
+* __Nano:__ Bruh.
