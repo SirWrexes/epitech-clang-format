@@ -33,7 +33,7 @@
     [integrate it with your favorite editor/IDE](https://clang.llvm.org/docs/ClangFormat.html).
 
 
-5. ### Last but not least: it's just a config file
+5. #### Last but not least: it's just a config file
     * Super easy to update !
     * Super easy to adapt it to your needs !
 ***
