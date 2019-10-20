@@ -1,0 +1,23 @@
+# DISCLAIMER:
+# If you're an Epitech student, remember : "Norminettes" are forbidden
+# unless you make one yourself ! Luckily, this is not a "Norminette",
+# it's a configuration file for a tool you already have installed on
+# Epitech's dump. Now I, Ludovic Fernandez, made this myself so use this
+# at your own risk.
+#
+# ...
+#
+# Nothing prevents you from changing this name above though, just saying.
+
+# Cpp is for C and C++ don't worry
+Language: Cpp
+
+# I've read a bit of Google's format rules
+# They're close to ours for some stuff and I'm a lazy boi
+BasedOnStyle: Google
+
+# First, let's disable evil tab characters and make indents 4 spaces
+UseTab: Never
+TabWidth: 4
+
+
