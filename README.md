@@ -53,7 +53,7 @@ $ clang-format -help
 
 ## Integration with your editor:
 * __Vim, Emacs, Clion, VSCode, BBEdit:__ go [here](https://clang.llvm.org/docs/ClangFormat.html)
-* __Sublime Text:__ Check [this](https://packagecontrol.io/packages/Clang Format) out. _(You're welcome, Raphael)_
+* __Sublime Text:__ Check [this](https://packagecontrol.io/packages/Clang%20Format) out. _(You're welcome, Raphael)_
 * __Notepad++:__ Bruh.
 ***
 
