@@ -62,12 +62,12 @@ $ clang-format -help
 
 ## List of rules implemented
 * __L - Layout inside a function scope__
-    * ⬇ L2 - Indentation
+    * L2 - Indentation
 #### CLang can't handle these :
 And some of them a Norminette can't handle either.
 _You should know the style requiremments anyway._
 * __O - File organization__
-    * ⬆ O1 - Contents of the delivery folder
+    * O1 - Contents of the delivery folder
     * O2 - File extension
     * O3 - File coherence
     * O4 - Naming files and folders
