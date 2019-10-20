@@ -4,7 +4,7 @@
 # unless you make one yourself ! Luckily, this is not a "Norminette",       #
 # it's a configuration file for a tool you already have installed on        #
 # Epitech's dump.                                                           #
-# Now I, Ludovic Fernandez, made this myself so use this at your own risk.  #
+# Now I, Ludovic Fernandez, made this myself so use it at your own risk.    #
 #                                                                           #
 # ...                                                                       #
 #                                                                           #
@@ -50,6 +50,7 @@ IndentPPDirectives: BeforeHash
 AlignAfterOpenBracket: DontAlign
 AllowAllArgumentsOnNextLine: true
 AllowAllParametersOfDeclarationOnNextLine: true
+IndentWrappedFunctionNames: false
 BinPackArguments: true
 BinPackParameters: true
 #-- Operations
@@ -139,4 +140,35 @@ IncludeCategories:
   - Regex:           '<[[:alnum:].]+>'
     Priority:        3
 
+# Remove empty line in blocks
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+# Max empty lines to keep
+MaxEmptyLinesToKeep: 1
+
+# Nested namespace indentation
+NamespaceIndentation: All
+
+# Place '*' and '&' next to the name of the variable
+PointerAlignment: Right
+
+# Column limit break for comments
+ReflowComments: true
+
+# Sort 'using' declarations
+SortUsingDeclarations: true
+
+# Spaces
+SpacesInCStyleCastParentheses: false
+SpaceAfterCStyleCast: true
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyBlocks: false
+SpaceInEmptyParentheses: false
+SpaceInAngles: false
+SpaceInContainerLiterals: false
+SpaceInParentheses: false
+SpaceInSquareBrackets: false
 
