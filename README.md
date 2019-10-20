@@ -1,5 +1,6 @@
 # EPITECH CLang-Format config
 ## Because Norminettes are all broken as hell.
+==============================================
 
 There are several reasons I wanted to make and share this.
 
