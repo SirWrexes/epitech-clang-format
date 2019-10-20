@@ -1,23 +1,142 @@
-# DISCLAIMER:
-# If you're an Epitech student, remember : "Norminettes" are forbidden
-# unless you make one yourself ! Luckily, this is not a "Norminette",
-# it's a configuration file for a tool you already have installed on
-# Epitech's dump. Now I, Ludovic Fernandez, made this myself so use this
-# at your own risk.
-#
-# ...
-#
-# Nothing prevents you from changing this name above though, just saying.
+#############################################################################
+# DISCLAIMER:                                                               #
+# If you're an Epitech student, remember : "Norminettes" are forbidden      #
+# unless you make one yourself ! Luckily, this is not a "Norminette",       #
+# it's a configuration file for a tool you already have installed on        #
+# Epitech's dump.                                                           #
+# Now I, Ludovic Fernandez, made this myself so use this at your own risk.  #
+#                                                                           #
+# ...                                                                       #
+#                                                                           #
+# Nothing prevents you from changing this name above though, just saying.   #
+#############################################################################
+#======================#
+# This formatting      #
+#======================#
+# Looks cool.
+#-- I'll take time to implement it when I'm done
+#-- with actually setting up everything
 
-# Cpp is for C and C++ don't worry
+#======================#
+# Language (C/C++)     #
+#======================#
 Language: Cpp
 
-# I've read a bit of Google's format rules
-# They're close to ours for some stuff and I'm a lazy boi
-BasedOnStyle: Google
+#======================#
+# Column limit         #
+#======================#
+ColumnLimit: 80
 
-# First, let's disable evil tab characters and make indents 4 spaces
-UseTab: Never
+#=====================#
+# Indents             #
+#=====================#
+#-- Indent width
 TabWidth: 4
+ContinuationIndentWidth: 4
+#-- Disable tabs
+UseTab: Never
+#-- Cases in a switch statement
+IndentCaseLabels: false
+#-- Preprocessor
+IndentPPDirectives: BeforeHash
+
+#======================#
+# Alignment after wrap #
+#======================#
+# When inserting a line-break because of column limitations or other, don't
+# align the multiple parts of the instruction / parameter list / operation.
+# I know it's ugly, but that's how they want it to be.
+#-- Function calls/declarations/definitions
+AlignAfterOpenBracket: DontAlign
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+BinPackArguments: true
+BinPackParameters: true
+#-- Operations
+AlignOperands: false
+
+
+#####
+# Avoid misplaced spaces on variable declaration
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+
+
+#####
+# Make macro declarations more eligible. Those won't trigger misplaced spaces.
+AlignConsecutiveMacros: true
+
+
+#####
+# Align backslashes when escaping several linebreaks
+AlignEscapedNewlines: Left
+
+
+#####
+# Align in-line comments for readability (might trigger L3, untested yet)
+AlignTrailingComments: true
+
+
+#####
+# Respect code line content rules and disable one-line bracketted code
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: None
+AllowShortLoopsOnASingleLine: false
+
+
+#####
+# Don't break after return type
+AlwaysBreakAfterReturnType: None
+
+
+#####
+# Brace wrapping
+BreakBeforeBraces: Custom
+BraceWrapping:
+    AfterCaseLabel: false
+    AfterControlStatement: false
+    AfterEnum: true
+    AfterFunction: true
+    AfterNamespace: true
+    AfterStruct: true
+    AfterUnion: true
+    AfterExternBlock: true
+    BeforeCatch: false
+    BeforeElse: false
+    IndentBraces: false
+    SplitEmptyFunction: true
+    SplitEmptyRecord: true
+    SplitEmptyNamespace: true
+
+
+#####
+# When wrapping, keep '=' on the top right, but operators appear on the new line
+BreakBeforeBinaryOperators: NonAssignment
+BreakBeforeTernaryOperators: true
+
+#####
+# Allow breaking string litterals when wrapping
+BreakStringLiterals: true
+
+
+#####
+# Disable spaces after '{' and before '}' in lists
+Cpp11BracedListStyle: true
+
+
+#####
+# Include sorting and priority
+SortIncludes: true
+IncludeBlocks: Preserve
+IncludeCategories:
+IncludeCategories:
+  - Regex:           '^"[[:alnum:].]+"'
+    Priority:        1
+  - Regex:           '<criterion/[a-z]+\.h>'
+    Priority:        2
+  - Regex:           '<[[:alnum:].]+>'
+    Priority:        3
 
 
