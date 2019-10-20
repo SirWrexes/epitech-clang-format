@@ -6,31 +6,34 @@
 1. #### Norminettes are __all broken__.
     * Not kept up to date
     * Flag tons of false positives
-    * They use and old version of Epitech's coding style  and it's _hard-coded_ inside them -- really this sucks and disallows any kind
-    of flexibility. And if you know me, you know I LOVE flexible code
+    * They use and old version of Epitech's coding style  and it's _hard-coded_ inside them
+    -- really this sucks and disallows any kind of flexibility.
+    And if you know me, you know I LOVE flexible code
 
 
 2. #### Norminettes are __forbidden__... unless you make one yourself.
-    * Making a C parser is lot of work and is often not worth it :
+    * Making a C parser is lot of work and often not worth it :
     It'll teach you very interresting things but I'm ready to bet that if you're
     not a geius that has 100% for every project ─ and if you are you don't
-    need a norminette ─ your Norminette will end up exactly like NormEZ
-    and the likes : broken as hell.
+    need a norminette ─ your parser will end up exactly like NormEZ : broken as hell.
 
 
 3. #### CLang and its tools are awesome !
 
-    * You should really take time to check them out, it's worth you while.
+    * You should really take time to check them out, it's worth your while.
     * CLang is an amazing compiler :
-        * faster than GCC
-        * much more eligible error/warning messages
-        * GCC compatible: GCC compile options  and extensions still work great with it !
+        * Faster than GCC
+        * Much more eligible error/warning messages
+        * GCC compatible: Compile options and GNU C extensions still work great with it !
 
 
 4. #### I'll probably have typed more text in this README than in my config
-    * Which proves how easy it is to have a fully functional way of
-    making both your C and C++ code Epitech Style compliant, while being able
+    * Which proves how easy it is to have a functional way of making both your C and C++
+    code Epitech Style compliant, while being able to
     [integrate it with your favorite editor/IDE](https://clang.llvm.org/docs/ClangFormat.html).
+
+
+5. ### Last but not least: it's just a config file
     * Super easy to update !
     * Super easy to adapt it to your needs !
 ***
@@ -44,7 +47,7 @@ $ ln -s .clang-format/.clang-format .
 __Note:__ Of course, you can chose to download the repo to some other directory like, say, `$HOME/.config/`
 ***
 
-## Command line use:
+## Command line usage:
 I invite you to type the following command in a terminal and carefuly read its output.
 ```bash
 $ clang-format -help
@@ -77,4 +80,4 @@ _You should know the style requiremments anyway._
     * V1 - Naming identifiers
     * V2 - Structures
 * __I'll finish this later.__
-    * I'll start actually writing the config file.
+    * and start actually writing the config file.
