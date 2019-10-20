@@ -21,6 +21,7 @@
 3. #### CLang and its tools are awesome !
 
     * You should really take time to check them out, it's worth your while.
+    * `clang-format` refrmats your code directly, and either prints it to stdout for a preview or directly in place, you chose.
     * CLang is an amazing compiler :
         * Faster than GCC
         * Much more eligible error/warning messages
