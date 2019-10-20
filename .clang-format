@@ -1,99 +1,76 @@
 #############################################################################
 # DISCLAIMER:                                                               #
-# If you're an Epitech student, remember : "Norminettes" are forbidden      #
-# unless you make one yourself ! Luckily, this is not a "Norminette",       #
-# it's a configuration file for a tool you already have installed on        #
-# Epitech's dump.                                                           #
-# Now I, Ludovic Fernandez, made this myself so use it at your own risk.    #
+# If you're an Epitech student, you know "norminettes" are forbidden unless #
+# you make one yourself. Luckily, this is NOT a norminette, it's a config   #
+# file for a tool that's packageed with Epitech's dump.                     #
+# Now I, Ludovic Fernandez, made this myself and you can use it at your own #
+# risks. I am not responsible for any kind of trouble this could bring you  #
+# whatsover.                                                                #
 #                                                                           #
 # ...                                                                       #
 #                                                                           #
 # Nothing prevents you from changing this name above though, just saying.   #
+#                                                                           #
+#---------------------------------------------------------------------------#
+#                                                                           #
+# This file is formatted so it's easier to find rules you want to change.   #
+# You may notice not every style rule is present and that's just CLang's    #
+# format tool's limitations. If you're using this, it should mean that you  #
+# know what you're doing and you know Epitech's Coding Style at least       #
+# robustly enough to not have to think about it when you're typing. If not  #
+# then I kindly ask you to read it many times, again and again, to the      #
+# point where you know it by heart, because that's how you're supposed to   #
+# do anyway.                                                                #
+#                                                                           #
+# That said, just a last little thing.                                      #
+# If a setting's comment line doesn't contain the corresponding style       #
+# rule, it can have two meanings:                                           #
+#   1. I didn't know which rule it corresponded to exactly                  #
+#   2. This is a facultative setting that I added because I thought it      #
+#      was good practice / made the code look cleaner.                      #
+#                                                                           #
+#---------------------------------------------------------------------------#
+#                                                                           #
+# I INSIST:                                                                 #
+# No norminette or clang format can give you a perfect 100 in style points. #
+# You should read the style rules regularly until you know them by heart    #
+#                                                                           #
 #############################################################################
-#======================#
-# This formatting      #
-#======================#
-# Looks cool.
-#-- I'll take time to implement it when I'm done
-#-- with actually setting up everything
 
-#======================#
-# Language (C/C++)     #
-#======================#
+
+
+#===========================================================================#
+# Language (C/C++)                                                          #
+#===========================================================================#
 Language: Cpp
 
-#======================#
-# Column limit         #
-#======================#
+
+
+#===========================================================================#
+# Column limit and wrapping rules                                           #
+#===========================================================================#
+# Rules: #
+#   + F3 #
+#   + L3 #
+#   + L4 #
+#--------#
+
+# F3 - Maximum columns count
 ColumnLimit: 80
 
-#=====================#
-# Indents             #
-#=====================#
-#-- Indent width
-TabWidth: 4
-ContinuationIndentWidth: 4
-#-- Disable tabs
-UseTab: Never
-#-- Cases in a switch statement
-IndentCaseLabels: false
-#-- Preprocessor
-IndentPPDirectives: BeforeHash
+# F3 - Column limit wrapping for comments
+ReflowComments: true
 
-#======================#
-# Alignment after wrap #
-#======================#
-# When inserting a line-break because of column limitations or other, don't
-# align the multiple parts of the instruction / parameter list / operation.
-# I know it's ugly, but that's how they want it to be.
-#-- Function calls/declarations/definitions
+# L3 - Prevent alignment of wrapped names to avoid misplaced spaces
 AlignAfterOpenBracket: DontAlign
 AllowAllArgumentsOnNextLine: true
 AllowAllParametersOfDeclarationOnNextLine: true
 IndentWrappedFunctionNames: false
 BinPackArguments: true
 BinPackParameters: true
-#-- Operations
 AlignOperands: false
 
-
-#####
-# Avoid misplaced spaces on variable declaration
-AlignConsecutiveAssignments: false
-AlignConsecutiveDeclarations: false
-
-
-#####
-# Make macro declarations more eligible. Those won't trigger misplaced spaces.
-AlignConsecutiveMacros: true
-
-
-#####
-# Align backslashes when escaping several linebreaks
-AlignEscapedNewlines: Left
-
-
-#####
-# Align in-line comments for readability (might trigger L3, untested yet)
-AlignTrailingComments: true
-
-
-#####
-# Respect code line content rules and disable one-line bracketted code
-AllowShortBlocksOnASingleLine: false
-AllowShortFunctionsOnASingleLine: None
-AllowShortIfStatementsOnASingleLine: Never
-AllowShortLambdasOnASingleLine: None
-AllowShortLoopsOnASingleLine: false
-
-
-#####
-# Don't break after return type
-AlwaysBreakAfterReturnType: None
-
-
-#####
-# Brace wrapping
+# L4 - Brace wrapping
 BreakBeforeBraces: Custom
 BraceWrapping:
     AfterCaseLabel: false
@@ -111,64 +88,147 @@ BraceWrapping:
     SplitEmptyRecord: true
     SplitEmptyNamespace: true
 
-
-#####
-# When wrapping, keep '=' on the top right, but operators appear on the new line
-BreakBeforeBinaryOperators: NonAssignment
-BreakBeforeTernaryOperators: true
-
-#####
-# Allow breaking string litterals when wrapping
-BreakStringLiterals: true
+# Don't break after return type
+AlwaysBreakAfterReturnType: None
 
 
-#####
-# Disable spaces after '{' and before '}' in lists
+
+
+#===========================================================================#
+# Indentation and spaces                                                    #
+#===========================================================================#
+# Rules: #
+#   + L2 #
+#   + L3 #
+#   + G3 #
+#--------#
+
+# L2 - Indent width and indent character
+TabWidth: 4
+ContinuationIndentWidth: 4
+UseTab: Never
+
+# G3 - Preprocessor
+IndentPPDirectives: BeforeHash
+
+# L3 - Declarations and assignments
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+
+# L3 - Disable spaces after '{' and before '}' in lists
 Cpp11BracedListStyle: true
 
+# L3 - Place '*' and '&' next to the name of the variable
+PointerAlignment: Right
 
-#####
-# Include sorting and priority
-SortIncludes: true
-IncludeBlocks: Preserve
-IncludeCategories:
-IncludeCategories:
-  - Regex:           '^"[[:alnum:].]+"'
-    Priority:        1
-  - Regex:           '<criterion/[a-z]+\.h>'
-    Priority:        2
-  - Regex:           '<[[:alnum:].]+>'
-    Priority:        3
+# L3 - Space after a cast, but not in its parentheses
+SpacesInCStyleCastParentheses: false
+SpaceAfterCStyleCast: true
 
-# Remove empty line in blocks
-KeepEmptyLinesAtTheStartOfBlocks: false
+# L3 - Space after logical not '!' (it's an unary operator)
+SpaceAfterLogicalNot: false
 
-# Max empty lines to keep
-MaxEmptyLinesToKeep: 1
+# L3 - Space before assignment operators '=', '+=', '|=', etc...
+SpaceBeforeAssignmentOperators: true
+
+# L3 - Space before control statement parentheses, but not function parentheses
+SpaceBeforeParens: ControlStatements
+
+# L3 - No space in empty blocks '{}' or parentheses '()'
+SpaceInEmptyBlocks: false
+SpaceInEmptyParentheses: false
+
+# L3 - No space between angles '<>'
+SpaceInAngles: false
+
+# L3 - No space in parentheses -- after '(' and before ')'
+SpaceInParentheses: false
+
+# L3 - No space inb square brackets -- after '[' and before ']'
+SpaceInSquareBrackets: false
+
+# L3 - No space in container literals
+# var a = [1, 2, 3] (<- betweebn square brackets and values)
+# f({a: 1, b: 2, c: 3}) (<- before ':' caracter)
+SpaceInContainerLiterals: false
+
+# Space after "template" keyword
+SpaceAfterTemplateKeyword: true
+
+# Cases in a switch statement
+IndentCaseLabels: false
 
 # Nested namespace indentation
 NamespaceIndentation: All
 
-# Place '*' and '&' next to the name of the variable
-PointerAlignment: Right
 
-# Column limit break for comments
-ReflowComments: true
+
+
+#===========================================================================#
+# Layout inside a function's scope                                          #
+#===========================================================================#
+# Rules: #
+#   + L1 #
+#   + G3 #
+#--------#
+
+# L1 - Disable one-line bracketted code
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: None
+AllowShortLoopsOnASingleLine: false
+
+# G3 - Remove empty line in blocks
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+
+
+
+#===========================================================================#
+# Global scope                                                              #
+#===========================================================================#
+# Rules: #
+#   + G2 #
+#--------#
+
+# G2 - Max empty lines to keep
+MaxEmptyLinesToKeep: 1
+
+
+
+
+#===========================================================================#
+# Readability improvements and extras                                       #
+#===========================================================================#
+
+# Make macro declarations more eligible. Those won't trigger misplaced spaces.
+AlignConsecutiveMacros: true
+
+# Align backslashes when escaping linebreaks
+AlignEscapedNewlines: Left
+
+# Align trailing comments (//)
+AlignTrailingComments: true
+
+# Allow breaking string litterals when wrapping
+BreakStringLiterals: true
+
+# When wrapping, keep '=' on the top right, but put operators on the new line
+BreakBeforeBinaryOperators: NonAssignment
+BreakBeforeTernaryOperators: true
+
+# Include sorting and priority - lowest priority gets sorted at the top of the list
+SortIncludes: true
+IncludeBlocks: Preserve
+IncludeCategories:
+IncludeCategories:
+  - Regex:           '^"[[:alnum:].]+"'       # Any "my_header.h"
+    Priority:        1
+  - Regex:           '<criterion/[a-z]+\.h>'  # Criterion headers
+    Priority:        2
+  - Regex:           '<[[:alnum:].]+>'        # System/Standard libs
+    Priority:        3
 
 # Sort 'using' declarations
 SortUsingDeclarations: true
-
-# Spaces
-SpacesInCStyleCastParentheses: false
-SpaceAfterCStyleCast: true
-SpaceAfterLogicalNot: false
-SpaceAfterTemplateKeyword: true
-SpaceBeforeAssignmentOperators: true
-SpaceBeforeParens: ControlStatements
-SpaceInEmptyBlocks: false
-SpaceInEmptyParentheses: false
-SpaceInAngles: false
-SpaceInContainerLiterals: false
-SpaceInParentheses: false
-SpaceInSquareBrackets: false
-
