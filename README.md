@@ -14,7 +14,7 @@
 2. #### Norminettes are __forbidden__... unless you make one yourself.
     * Making a C parser is lot of work and often not worth it :
     It'll teach you very interresting things but I'm ready to bet that if you're
-    not a geius that has 100% for every project ─ and if you are you don't
+    not a genius that has 100% for every project ─ and if you are you don't
     need a norminette ─ your parser will end up exactly like NormEZ : broken as hell.
 
 
