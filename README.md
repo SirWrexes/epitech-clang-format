@@ -1,38 +1,80 @@
-# EPITECH CLang-Format config
-## Because Norminettes are all broken as hell.
+# **EPITECH CLang-Format config**
+# Because Norminettes are broken as hell.
+***
 
-There are several reasons I wanted to make and share this.
-
-1. First one is that Norminettes are, as said above, all broken.
-
-    They're not updated anymore, they flag tons of false positives,
-    They're using a old version of Epitech's coding style that is
-    HARD-CODED inside them -- really this sucks and disallows any kind
+## Several reasons why:
+1. #### Norminettes are __all broken__.
+    * Not kept up to date
+    * Flag tons of false positives
+    * They use and old version of Epitech's coding style  and it's _hard-coded_ inside them -- really this sucks and disallows any kind
     of flexibility. And if you know me, you know I LOVE flexible code
 
 
-2. Moreover, Norminettes are FORBIDDEN... unless you make one yourself.
-
-    Making a parser/syntax checker/linter/style checker/call it whatever
-    is a long road that requires a lot of work and is often not worth it.
-    It'll teach you very interresting things but I bet you 10k€ that if you're
-    not a geius that has 100% at every project ─ and if you are you dont't
+2. #### Norminettes are __forbidden__... unless you make one yourself.
+    * Making a C parser is lot of work and is often not worth it :
+    It'll teach you very interresting things but I'm ready to bet that if you're
+    not a geius that has 100% for every project ─ and if you are you don't
     need a norminette ─ your Norminette will end up exactly like NormEZ
     and the likes : broken as hell.
 
 
-3. CLang and its tools are awesome !
+3. #### CLang and its tools are awesome !
 
-    You should really take time to check them out, it's worth you while.
-    CLang is an amazing compiler : faster than GCC, with much more eligible
-    error/warning messages, and of course it's GCC compatible, meaning
-    that GCC compile options still work with it, attributes and stuff too.
+    * You should really take time to check them out, it's worth you while.
+    * CLang is an amazing compiler :
+        * faster than GCC
+        * much more eligible error/warning messages
+        * GCC compatible: GCC compile options  and extensions still work great with it !
 
 
-4. I'll probably have typed more text in this README than in my config
-
-    Which proves how easy it is to have a fully functional way of
+4. #### I'll probably have typed more text in this README than in my config
+    * Which proves how easy it is to have a fully functional way of
     making both your C and C++ code Epitech Style compliant, while being able
-    [integrate it with your favorite editor/IDE](https://clang.llvm.org/docs/ClangFormat.html)
-    super easily.
+    [integrate it with your favorite editor/IDE](https://clang.llvm.org/docs/ClangFormat.html).
+    * Super easy to update !
+    * Super easy to adapt it to your needs !
+***
 
+## Installation:
+Go in your home directory and execute the following commands
+```bash
+$ git clone git@github.com:fox-tek/.clang-format.git
+$ ln -s .clang-format/.clang-format .
+```
+__Note:__ Of course, you can chose to download the repo to some other directory like, say, `$HOME/.config/`
+***
+
+## Command line use:
+I invite you to type the following command in a terminal and carefuly read its output.
+```bash
+$ clang-format -help
+```
+***
+
+## Integration with your editor:
+* __Vim, Emacs, Clion, VSCode, BBEdit:__ go [here](https://clang.llvm.org/docs/ClangFormat.html)
+* __Sublime Text:__ Check [this](https://packagecontrol.io/packages/Clang Format) out. _(You're welcome, Raphael)_
+* __Notepad++:__ Bruh.
+***
+
+## List of rules implemented
+* __L - Layout inside a function scope__
+    * ⬇ L2 - Indentation
+#### CLang can't handle these :
+And some of them a Norminette can't handle either.
+_You should know the style requiremments anyway._
+* __O - File organization__
+    * ⬆ O1 - Contents of the delivery folder
+    * O2 - File extension
+    * O3 - File coherence
+    * O4 - Naming files and folders
+* __G - Global scope__
+    * G1 - File header
+* __F - Functions__
+    * F1 - Coherence of functions
+    * F2 -  Naming functions
+* __V - Variables and types__
+    * V1 - Naming identifiers
+    * V2 - Structures
+* __I'll finish this later.__
+    * I'll start actually writing the config file.
