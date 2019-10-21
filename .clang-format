@@ -150,7 +150,7 @@ SpaceInSquareBrackets: false
 # L3 - No space in container literals
 # var a = [1, 2, 3] (<- betweebn square brackets and values)
 # f({a: 1, b: 2, c: 3}) (<- before ':' caracter)
-SpaceInContainerLiterals: false
+SpacesInContainerLiterals: false
 
 # Space after "template" keyword
 SpaceAfterTemplateKeyword: true
