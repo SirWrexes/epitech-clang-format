@@ -135,17 +135,17 @@ SpaceBeforeAssignmentOperators: true
 SpaceBeforeParens: ControlStatements
 
 # L3 - No space in empty blocks '{}' or parentheses '()'
-SpaceInEmptyBlocks: false
+# SpaceInEmptyBlock: false <- This one isn't compatible with my clang-format version
 SpaceInEmptyParentheses: false
 
 # L3 - No space between angles '<>'
-SpaceInAngles: false
+SpacesInAngles: false
 
 # L3 - No space in parentheses -- after '(' and before ')'
-SpaceInParentheses: false
+SpacesInParentheses: false
 
 # L3 - No space inb square brackets -- after '[' and before ']'
-SpaceInSquareBrackets: false
+SpacesInSquareBrackets: false
 
 # L3 - No space in container literals
 # var a = [1, 2, 3] (<- betweebn square brackets and values)
