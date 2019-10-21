@@ -218,17 +218,17 @@ BreakStringLiterals: true
 BreakBeforeBinaryOperators: NonAssignment
 BreakBeforeTernaryOperators: true
 
-# Include sorting and priority - lowest priority gets sorted at the top of the list
+# Include sorting and priority - lowest priority gets sorted at the bottom of the list
 SortIncludes: true
 IncludeBlocks: Preserve
 IncludeCategories:
 IncludeCategories:
   - Regex:           '^"[[:alnum:].]+"'       # Any "my_header.h"
-    Priority:        1
+    Priority:        3
   - Regex:           '<criterion/[a-z]+\.h>'  # Criterion headers
     Priority:        2
   - Regex:           '<[[:alnum:].]+>'        # System/Standard libs
-    Priority:        3
+    Priority:        1
 
 # Sort 'using' declarations
 SortUsingDeclarations: true
