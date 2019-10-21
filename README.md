@@ -69,7 +69,3 @@ Open the .clang-format and read. I made it so it's clear what it does. Happy cod
 * #### Instructionless while/for
 `while(SOME_CONDITION); ` will be converted to ` while(SOME_CONDITION)\n;` (where `\n` is an actual linebreak)
 This is probably caused by ` AllowShortLoopsOnASingleLine: false`
-
-* #### Criterion Test() macros
-  For some reason ─ likely that they're not functions ─ Test() macros' instructions have a 2 spaces indentation.
-  There might be a way to fix this, I'll look into it when I can. For now, just be careful with clang-format and tests.

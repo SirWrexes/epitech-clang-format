@@ -105,6 +105,7 @@ AlwaysBreakAfterReturnType: None
 
 # L2 - Indent width and indent character
 TabWidth: 4
+IndentWidth: 4
 ContinuationIndentWidth: 4
 UseTab: Never
 
