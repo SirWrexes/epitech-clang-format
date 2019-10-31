@@ -67,4 +67,4 @@ Open the .clang-format and read. I made it so it's clear what it does. Happy cod
 
 ## Known issues:
 * #### Instructionless while/for
-`while(SOME_CONDITION); ` will be converted to ` while(SOME_CONDITION)\n;` (where `\n` is an actual linebreak)
+`while(SOME_CONDITION); ` will be converted to ` while(SOME_CONDITION)\n;` (where `\n` is an actual linebreak). Just do `while(SOME_CONDITION) {}`.
