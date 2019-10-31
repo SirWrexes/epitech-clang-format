@@ -56,7 +56,7 @@ Language: Cpp
 #--------#
 
 # F3 - Maximum columns count
-ColumnLimit: 80
+ColumnLimit: 79
 
 # F3 - Column limit wrapping for comments
 ReflowComments: true
@@ -174,11 +174,14 @@ NamespaceIndentation: All
 #--------#
 
 # L1 - Disable one-line bracketted code
-AllowShortBlocksOnASingleLine: false
 AllowShortFunctionsOnASingleLine: None
 AllowShortIfStatementsOnASingleLine: Never
 AllowShortLambdasOnASingleLine: None
 AllowShortLoopsOnASingleLine: false
+# Except for while/for to allow counters like `while(++i < condition);`
+AllowShortBlocksOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true # This one is a experiment, might delete
+                                        # if it triggers L1 positives.
 
 # G3 - Remove empty line in blocks
 KeepEmptyLinesAtTheStartOfBlocks: false
@@ -217,6 +220,8 @@ BreakStringLiterals: true
 
 # When wrapping, keep '=' on the top right, but put operators on the new line
 BreakBeforeBinaryOperators: NonAssignment
+
+#
 BreakBeforeTernaryOperators: true
 
 # Include sorting and priority - lowest priority gets sorted at the bottom of the list
