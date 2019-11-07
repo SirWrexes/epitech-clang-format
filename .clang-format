@@ -2,7 +2,7 @@
 # DISCLAIMER:                                                               #
 # If you're an Epitech student, you know "norminettes" are forbidden unless #
 # you make one yourself. Luckily, this is NOT a norminette, it's a config   #
-# file for a tool that's packageed with Epitech's dump.                     #
+# file for a tool that's packaged with Epitech's dump.                      #
 # Now I, Ludovic Fernandez, made this myself and you can use it at your own #
 # risks. I am not responsible for any kind of trouble this could bring you  #
 # whatsover.                                                                #
@@ -75,11 +75,11 @@ BreakBeforeBraces: Custom
 BraceWrapping:
     AfterCaseLabel: false
     AfterControlStatement: false
-    AfterEnum: true
+    AfterEnum: false
     AfterFunction: true
     AfterNamespace: true
-    AfterStruct: true
-    AfterUnion: true
+    AfterStruct:false
+    AfterUnion: false
     AfterExternBlock: true
     BeforeCatch: false
     BeforeElse: false
