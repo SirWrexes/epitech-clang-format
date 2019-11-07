@@ -157,7 +157,7 @@ SpacesInContainerLiterals: false
 SpaceAfterTemplateKeyword: true
 
 # Cases in a switch statement
-IndentCaseLabels: false
+IndentCaseLabels: true
 
 # Nested namespace indentation
 NamespaceIndentation: All
