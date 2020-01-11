@@ -178,10 +178,10 @@ AllowShortFunctionsOnASingleLine: None
 AllowShortIfStatementsOnASingleLine: Never
 AllowShortLambdasOnASingleLine: None
 AllowShortLoopsOnASingleLine: false
-# Except for while/for to allow counters like `while(++i < condition);`
+# Except for while/for to allow counters like `while (++i < condition) {}`
 AllowShortBlocksOnASingleLine: true
-AllowShortCaseLabelsOnASingleLine: true # This one is a experiment, might delete
-                                        # if it triggers L1 positives.
+# A simple case case be written `case X: do_something(); break;`
+AllowShortCaseLabelsOnASingleLine: true
 
 # G3 - Remove empty line in blocks
 KeepEmptyLinesAtTheStartOfBlocks: false
