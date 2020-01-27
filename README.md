@@ -42,7 +42,7 @@
 ## Installation:
 Go in your home directory and execute the following commands
 ```bash
-$ git clone git@github.com:fox-tek/.clang-format.git
+$ git clone git@github.com:fox-tek/epitech-clang-format.git
 $ ln -sf epitech-clang-format/.clang-format ~/
 ```
 __Note:__ Of course, you can chose to download the repo to some other directory like, say, `$HOME/.config/`
