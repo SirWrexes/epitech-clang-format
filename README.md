@@ -43,7 +43,7 @@
 Go in your home directory and execute the following commands
 ```bash
 $ git clone git@github.com:fox-tek/.clang-format.git
-$ ln -s .clang-format/.clang-format .
+$ ln -sf epitech-clang-format/.clang-format ~/
 ```
 __Note:__ Of course, you can chose to download the repo to some other directory like, say, `$HOME/.config/`
 ***
