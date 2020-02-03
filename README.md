@@ -52,6 +52,9 @@ Run the following command in a terminal and carefuly read its output.
 ```bash
 $ clang-format --help
 ```
+
+Make sure you have a recent version of `clang-format` (use version 9.0.1 or later).
+
 ***
 
 ## Integration with your editor:
