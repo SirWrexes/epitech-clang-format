@@ -55,7 +55,8 @@ $ clang-format --help
 ***
 
 ## Integration with your editor:
-* __Vim, Emacs, Clion, VSCode, BBEdit:__ go [here](https://clang.llvm.org/docs/ClangFormat.html)
+* __Vim, Emacs, VSCode, BBEdit:__ go [here](https://clang.llvm.org/docs/ClangFormat.html)
+* __CLion__: Read [CLion documentation](https://www.jetbrains.com/help/clion/clangformat-as-alternative-formatter.html)
 * __Sublime Text:__ Check [this](https://packagecontrol.io/packages/Clang%20Format) out.
 * __Nano:__ Bruh.
 ***
