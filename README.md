@@ -2,6 +2,10 @@
 # Because Norminettes are broken as hell.
 ***
 
+#### Disclaimer #####
+I am no longer studying at Epitech. If the school's coding style changes, I won't know about it.
+I encourage you to bring modifications to this file when needed so it can keep being a useful tool for current students.
+
 ## Several reasons why:
 1. #### Norminettes are __all broken__.
     * Mostly not kept up to date
@@ -27,15 +31,15 @@
         * GCC compatible: Compile options and GNU C extensions still work great with it !
 
 
-4. #### I'll probably have typed more text in this README than in my config
+4. #### This README contains more text than the config
     * Which proves how easy it is to have a functional way of making both your C and C++
-    code Epitech Style compliant, while being able to
+    code more Epitech style compliant, while being able to
     [integrate it with your favorite editor/IDE](https://clang.llvm.org/docs/ClangFormat.html).
 
 
 5. #### Last but not least: it's just a config file
     * Super easy to update !
-    * Super easy to adapt it to your needs !
+    * Super easy to adapt to your needs !
 ***
 
 ## Installation:
